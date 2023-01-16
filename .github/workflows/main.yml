@@ -17,7 +17,7 @@ jobs:
       - name: Decode MapsApiKey.kt
         env:
           FIREBASE_SECRET: ${{ secrets.API_KEY }}
-        run: echo $API_KEY > ./utils/MapsApiKey.kt
+        run: echo $API_KEY > .app/utils/MapsApiKey.kt
         
       - name: Build
         run: |
