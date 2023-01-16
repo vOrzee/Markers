@@ -14,6 +14,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
 
+      - name: Decode MapsApiKey.kt
+        env:
+          FIREBASE_SECRET: ${{ secrets.API_KEY }}
+        run: echo $API_KEY > ./utils/MapsApiKey.kt
+        
       - name: Build
         run: |
           chmod +x ./gradlew
