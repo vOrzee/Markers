@@ -31,7 +31,7 @@ class MapsFragment : Fragment() {
         binding = FragmentMapsBinding.inflate(layoutInflater)
         val map = binding.mapview.map
         val latitudeMap = arguments?.latitude ?: 59.945933
-        val longitudeMap = arguments?.latitude ?: 30.320045
+        val longitudeMap = arguments?.longitude ?: 30.320045
         val zoomMap = arguments?.zoom ?: 8.0f
         map.move(
             CameraPosition(Point(latitudeMap, longitudeMap), zoomMap, 0.0f, 0.0f),
