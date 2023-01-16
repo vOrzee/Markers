@@ -13,11 +13,6 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-
-      - name: Decode MapsApiKey.kt
-        env:
-          API_KEY: ${{ secrets.API_KEY }}
-        run: echo $API_KEY > .app/utils/MapsApiKey.kt
         
       - name: Build
         run: |
