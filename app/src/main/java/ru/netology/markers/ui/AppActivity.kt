@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.yandex.mapkit.MapKitFactory
 import dagger.hilt.android.AndroidEntryPoint
 import ru.netology.markers.R
-import ru.netology.markers.utils.API_KEY
 
 @AndroidEntryPoint
 class AppActivity : AppCompatActivity(R.layout.activity_main) {
@@ -13,7 +12,7 @@ class AppActivity : AppCompatActivity(R.layout.activity_main) {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        MapKitFactory.setApiKey(API_KEY)
+        MapKitFactory.setApiKey("00000000-0000-0000-0000-000000000000")
         MapKitFactory.initialize(this)
     }
 }
