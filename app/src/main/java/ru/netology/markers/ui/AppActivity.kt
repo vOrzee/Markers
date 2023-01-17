@@ -14,5 +14,6 @@ class AppActivity : AppCompatActivity(R.layout.activity_main) {
         super.onCreate(savedInstanceState)
         MapKitFactory.setApiKey("00000000-0000-0000-0000-000000000000")
         MapKitFactory.initialize(this)
+
     }
 }

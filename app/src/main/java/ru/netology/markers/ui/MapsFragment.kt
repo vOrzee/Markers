@@ -40,6 +40,7 @@ class MapsFragment : Fragment() {
         )
 
         map.addCameraListener { _, cameraPosition, _, _ ->
+
             binding.point.setOnLongClickListener {
                 val point = cameraPosition.target
                 findNavController().navigate(
